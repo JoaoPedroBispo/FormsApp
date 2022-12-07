@@ -1,5 +1,6 @@
 import { StorageService } from './../services/storage.service';
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from './../models/usuario';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -11,6 +12,7 @@ import { Router } from '@angular/router';
 export class SignupPage implements OnInit {
 
   formRegistro: FormGroup;
+  usuario: Usuario = new Usuario();
 
 
   mensagens = {
@@ -52,7 +54,16 @@ export class SignupPage implements OnInit {
   ngOnInit() {
   }
 
-  salvarRegistro() {
-    console.log('Formulário: ', this.formRegistro.valid);
+  async salvarRegistro() {
+    if(this.formRegistro.valid){
+      this.usuario.nome = this.formRegistro.value.nome;
+      this.usuario.cpf = this.formRegistro.value.cpf;
+      this.usuario.email = this.formRegistro.value.email;
+      this.usuario.senha = this.formRegistro.value.senha;
+      await this.storageService.set(this.usuario.email, this.usuario);
+      this.route.navigateByUrl('/tabs/tab1');
+    }else{
+      alert('Formulário inválido!');
+    }
   }
 }
