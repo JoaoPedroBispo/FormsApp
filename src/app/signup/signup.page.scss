@@ -15,12 +15,12 @@ ion-content{
       font-weight: 700;
       font-size: 26px;
       color: #010100;
-      margin-bottom: 15%;
+      margin: 50px 0 16px 0;
     }
 
 
   #form {
-    margin-top: 15%;
+    margin-top: 12%;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -28,10 +28,11 @@ ion-content{
       margin-top: 35px;
       height: 48px;
       font-size: 18px;
+      font-weight: 600;
       text-transform: initial;
-      border-radius: 50%;
-      box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
-      --box-shadow: none;
+      border-radius: 50px;
+      box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.12);
+      --highlight-height: 0px;
     }
   }
 
