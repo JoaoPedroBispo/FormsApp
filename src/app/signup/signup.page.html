@@ -54,7 +54,7 @@
         </span>
       </ng-container>
 
-      <ion-input formControlName="confirmaSenha" placeholder="Confirmar Senha"></ion-input>
+      <ion-input formControlName="confirmaSenha" type="password" placeholder="Confirmar Senha"></ion-input>
       <ng-container *ngFor="let erro of mensagens.confirmaSenha">
         <span class="msg-erro"
         *ngIf="formRegistro.get('confirmaSenha')?.hasError(erro.tipo) && (formRegistro.get('confirmaSenha')?.dirty || formRegistro.get('confirmaSenha')?.touched)">
@@ -62,7 +62,7 @@
         </span>
       </ng-container>
 
-    <ion-button expand="block" shape="round">Criar</ion-button>
+    <ion-button expand="block" shape="round" routerLink="/" (click)="salvarRegistro()">Criar</ion-button>
 
   </form>
 

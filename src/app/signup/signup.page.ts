@@ -60,7 +60,7 @@ export class SignupPage implements OnInit {
       this.usuario.email = this.formRegistro.value.email;
       this.usuario.senha = this.formRegistro.value.senha;
       await this.storageService.set(this.usuario.email, this.usuario);
-      this.route.navigateByUrl('/tabs/tab1');
+      this.route.navigateByUrl('tab1');
     }else{
       alert('Formulário inválido!');
     }

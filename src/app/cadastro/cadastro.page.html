@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="roxo" routerLink="/" color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Produtos</h1>
+  </div>
+
+  <form id="form">
+  <ion-card>
+    <ion-item>
+      <ion-label>Produto</ion-label>
+      <ion-select placeholder="Selecione">
+        <ion-select-option value="">Iphone 8</ion-select-option>
+        <ion-select-option value="">Iphone 11</ion-select-option>
+        <ion-select-option value="">Iphone 13 pro max</ion-select-option>
+        <ion-select-option value="">Samsung S23 Utra</ion-select-option>
+        <ion-select-option value="">Motorola G8 plus</ion-select-option>
+        <ion-select-option value="">Lenovo</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked" color="dark"><strong>Descrição</strong></ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked" color="dark"><strong>Garantia</strong></ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked" color="dark"><strong>Preço</strong></ion-label>
+      <ion-input type="number" placeholder=""></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-button expand="block">Procurar</ion-button>
+
+</form>
+
+</ion-content>

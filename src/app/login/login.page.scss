@@ -36,14 +36,21 @@ ion-content{
     padding-left: 30px;
     padding-right: 30px;
 
-    ion-button{
-      margin-top: 35px;
+    ion-input{
+      margin-top: 20px;
       height: 48px;
       font-size: 18px;
       text-transform: initial;
       border-radius: 50px;
+      color: #000000;
+      background-color: #ffffff;
       box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.12);
       --highlight-height: 0px;
+    }
+    ion-button{
+      margin: 35px 2px;
+      height: 43px;
+      font-size: 17px;
     }
 
     .links {
