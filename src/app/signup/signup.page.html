@@ -46,7 +46,7 @@
       </ng-container>
 
 
-      <ion-input formControlName="senha" placeholder="Senha"></ion-input>
+      <ion-input formControlName="senha" type="password" placeholder="Senha"></ion-input>
       <ng-container *ngFor="let erro of mensagens.senha">
         <span class="msg-erro"
         *ngIf="formRegistro.get('senha')?.hasError(erro.tipo) && (formRegistro.get('senha')?.dirty || formRegistro.get('senha')?.touched)">
